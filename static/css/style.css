@@ -96,7 +96,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #158b39;
 }
 
 .post-title {
@@ -110,14 +110,14 @@ body {
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #1cc54f;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fffb00;
-    color: #23BBBB;
+    background-color: #158b39;
+    color: #fff;
 }
 
 .link {
@@ -132,18 +132,17 @@ body {
 }
 
 .btn-like {
-    color: #E84610;
+    color: #1cc54f;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #158b39;
     background: transparent;
     border: none;
 }
-
 
 .navbar {
 
