@@ -56,14 +56,27 @@
         </div>
     </nav>
 
-    <main class="flex-shrink-0 main-bg">
+
+    <div class="container-fluid flex-grow-1">
+        <div class="row h-100">
+            <!-- Seitenpanel -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+                <!-- Hier kannst du den Inhalt deines Seitenpanels platzieren -->
+                <div class="position-sticky">
+                    <!-- Hier kommt dein Seitenpanel-Inhalt -->
+                    <p>Text</p>
+                </div>
+            </nav>
+
+            <!-- Hauptinhalt -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-bg">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
+    <footer class="footer py-3 dark-bg">
         <p class="m-0 text-center ">©2023 Fürstenhof</p>
         <p class="m-0 text-center ">Follow us: 
             <i class="fa-brands fa-tiktok" style="color: #000000;"></i>
