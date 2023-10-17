@@ -1,5 +1,5 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #fffb00;
 }
 
 .brand {
@@ -18,7 +18,7 @@ body {
 }
 
 .light-bg {
-    background-color: #fff;
+    background-color: #fffb00;
 }
 
 .dark-bg {
@@ -26,7 +26,7 @@ body {
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #fffb00;
 }
 
 .card {
@@ -113,7 +113,7 @@ body {
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
+    background-color: #fffb00;
     color: #23BBBB;
 }
 
