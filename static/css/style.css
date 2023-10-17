@@ -19,10 +19,13 @@ body {
 
 .light-bg {
     background-color: #fffb00;
+    
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #fffb00;
+    border-radius: 3px;
+    border-color: #fff;
 }
 
 .main-bg {
@@ -139,4 +142,20 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+
+.navbar {
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 12px 22px -1px rgba(0,0,0,0.23); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 12px 22px -1px rgba(0,0,0,0.23);
+}
+
+.navbar-nav {
+    margin-left: auto; 
+}
+
+.footer {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px -12px 22px -1px rgba(0,0,0,0.23); 
+box-shadow: 0px 10px 13px -7px #000000, 0px -12px 22px -1px rgba(0,0,0,0.23);
 }
