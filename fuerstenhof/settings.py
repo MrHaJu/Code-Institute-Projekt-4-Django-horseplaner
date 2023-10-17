@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-uaare=dk1f@f+z(y5n2o+dx6bn^u4#)a=$1!%u##)h72_)kcmh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["mrhaju-pp4-horse-planer-9051a41351ce.herokuapp.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["mrhaju-pp4-horse-planer-9051a41351ce.herokuapp.com","8000-mrhaju-code-institute-pr-goiyaz5p64.us2.codeanyapp.com", "127.0.0.1"]
 
 
 # Application definition
