@@ -1,10 +1,12 @@
-from django.shortcuts import render, get_object_or_404, reverse, redirect
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post, UserPost
-from .forms import CommentForm, UserPostForm
+from .models import Post
+from .forms import CommentForm
 
 
+class HorsesView(generic.TemplateView):
+    template_name = 'horses.html'
 
 
 class PostList(generic.ListView):
