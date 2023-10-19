@@ -56,6 +56,9 @@
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
+                        <a id="horsenavtop" class="nav-link" href="{% url 'horses' %}">Horses</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     {% else %}
@@ -74,27 +77,21 @@
 
     
 
-    <div class="container-fluid flex-grow-1">
+    <div class="container-fluid flex-grow-">
         <div class="row h-100">
             <!-- sidebar -->
-            <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+            
+            
+            <nav id="sidebar" class="col-md-3 col-lg-2 col-sm-1 d-lg-block sidebar">
                 <!-- content for sidebar -->
                 <div class="position-sticky sidenav">
                     <!-- content -->
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <button type="submit" class="btn btn-signup sidebu" name="Home"><a class="nav-link" href="{% url 'home' %}">Home</a></button>
-                        </li>
-                        {% if user.is_authenticated %}
-                        <li class="nav-item">
-                            <button type="submit" class="btn btn-signup sidebu" name="Horses"><a class="nav-link" href="{% url 'horses' %}">Horses</a></button>
-                        </li>
-                        {% endif %}
+                    
                         <!-- Weitere Links hier einfügen, falls benötigt -->
                     </ul>
                 </div>
             </nav>
-
+            
             <!-- Maincontent -->
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-bg maincontent">
         {% block content %}
@@ -110,6 +107,7 @@
             <i class="fa-brands fa-instagram" style="color: #000000;"></i>
             <i class="fa-brands fa-youtube" style="color: #000000;"></i></p>
     </footer>
+    
     <script>
         setTimeout(function() {
             let messages = document.getElementById("msg");
