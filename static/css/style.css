@@ -154,6 +154,10 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 12px 22px -1px rgba(0,0,0,0.23);*/
     margin-left: auto; 
 }
 
+.navbar-logo {
+    max-width: 100px; 
+    height: auto;
+}
 
 .maincontent {
     background-color: #FFF8BD;
