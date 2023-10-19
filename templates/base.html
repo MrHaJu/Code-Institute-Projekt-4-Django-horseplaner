@@ -33,6 +33,21 @@
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Alerts -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        {% for message in messages %}
+                        <div class="alert {{ message.tags}} alert-dismissible fade show" id="msg" role="alert">
+                            {{ message | safe }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -56,33 +71,31 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                {% for message in messages %}
-                <div class="alert {{ message.tags}} alert-dismissible fade show" id="msg" role="alert">
-                    {{ message | safe }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-
-                {% endfor %}
-            </div>
-        </div>
-    </div>
+    
 
     <div class="container-fluid flex-grow-1">
         <div class="row h-100">
-            <!-- Seitenpanel -->
+            <!-- sidebar -->
             <nav class="col-md-3 col-lg-2 d-md-block sidebar">
-                <!-- Hier kannst du den Inhalt deines Seitenpanels platzieren -->
-                <div class="position-sticky">
-                    <!-- Hier kommt dein Seitenpanel-Inhalt -->
-                    <p>Text</p>
+                <!-- content for sidebar -->
+                <div class="position-sticky sidenav">
+                    <!-- content -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <button type="submit" class="btn btn-signup sidebu" name="Home"><a class="nav-link" href="{% url 'home' %}">Home</a></button>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <button type="submit" class="btn btn-signup sidebu" name="Horses"><a class="nav-link" href="{% url 'horses' %}">Horses</a></button>
+                        </li>
+                        {% endif %}
+                        <!-- Weitere Links hier einfügen, falls benötigt -->
+                    </ul>
                 </div>
             </nav>
 
-            <!-- Hauptinhalt -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-bg">
+            <!-- Maincontent -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-bg maincontent">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
