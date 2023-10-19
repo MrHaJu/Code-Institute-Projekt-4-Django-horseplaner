@@ -16,19 +16,10 @@ body {
 .thin {
     font-weight: 300;
 }
-
-.light-bg {
-    /*background-color: #FFF8BD;*/
-}
-
 .dark-bg {
     /*background-color: #FFF8BD;*/
     border-radius: 3px;
     border-color: #fff;
-}
-
-.main-bg {
-    /*background-color: #FFF8BD;*/
 }
 
 .card {
