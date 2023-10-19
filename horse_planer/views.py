@@ -5,8 +5,11 @@ from .models import Post
 from .forms import CommentForm
 
 
-class HorsesView(generic.TemplateView):
+class HorsesView(generic.ListView):
+    model = Post
+    queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "horses.html"
+    paginate_by = 6
 
 
 class PostList(generic.ListView):
