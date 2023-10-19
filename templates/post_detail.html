@@ -16,16 +16,16 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%">
+                <img src="#" width="100%">
                 {% else %}
-                <img src="{{ post.featured_image.url }}" width="100%">
+                <img src="{{ post.featured_image.url }}" class="img-responsive">
                 {% endif %}
             </div>
         </div>
     </div>
 </div>
 
-<div class="container">
+<div class="container-detail">
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
@@ -74,9 +74,9 @@
             <hr>
         </div>
     </div>
-    <div class="row">
+    <div class="row comsec">
         <div class="col-md-8 card mb-4  mt-3 ">
-            <h3>Comments:</h3>
+            <h3>Informations:</h3>
             <div class="card-body">
                 <!-- We want a for loop inside the tags to iterate through each comment in comments -->
                 {% for comment in comments %}
@@ -107,7 +107,7 @@
 
                 {% if user.is_authenticated %}
 
-                <h3>Leave a comment:</h3>
+                <h3>Write Informations:</h3>
                 <p>Posting as: {{ user.username }}</p>
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
