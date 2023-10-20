@@ -212,3 +212,12 @@ footer i {
 .signout {
     text-align: center;
 }
+
+@media  screen and (max-width: 450px) {
+    .Logo {
+        display: none;
+    }
+    .brand {
+        font-size: 0.8rem;
+    }
+}
