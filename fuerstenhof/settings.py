@@ -17,6 +17,8 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
+development = os.environ.get("DEVELOPMENT", False)
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
@@ -29,9 +31,12 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-uaare=dk1f@f+z(y5n2o+dx6bn^u4#)a=$1!%u##)h72_)kcmh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = development
 
-ALLOWED_HOSTS = ["mrhaju-pp4-horse-planer-9051a41351ce.herokuapp.com","8000-mrhaju-code-institute-pr-goiyaz5p64.us2.codeanyapp.com", "127.0.0.1"]
+if development:
+    ALLOWED_HOSTS = ["mrhaju-pp4-horse-planer-9051a41351ce.herokuapp.com","8000-mrhaju-code-institute-pr-goiyaz5p64.us2.codeanyapp.com", "127.0.0.1"]
+else:
+    ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME")]
 
 
 # Application definition
@@ -104,18 +109,15 @@ TEMPLATES = [
 WSGI_APPLICATION = 'fuerstenhof.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
-DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}
+if development:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
+else:
+    DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 
 # Password validation
