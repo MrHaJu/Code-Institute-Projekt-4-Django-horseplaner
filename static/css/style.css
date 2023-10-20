@@ -37,7 +37,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23bbbb;
+    background-color: #1cc54f;
 }
 
 .author {
@@ -56,8 +56,9 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
+    background-color: #FFE500;
+    opacity: 0.8;
+    color: #000;
     position: relative;
 }
 
@@ -73,7 +74,8 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #FFE500;
+    opacity: 0.5;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -97,7 +99,7 @@ body {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: #158b39;
 }
 
 .btn-signup {
@@ -194,7 +196,15 @@ footer i {
     padding-right: 20px;
 }
 
+.apan {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
 
+.apan:hover {
+    color: inherit;
+}
 
 .img-responsive {
     max-width: 50%;
@@ -207,6 +217,12 @@ footer i {
 .signout {
     text-align: center;
 }
+
+.card-img-top {
+    width: 300px;
+    height: auto;
+}
+
 
 @media  screen and (max-width: 450px) {
     .Logo {
