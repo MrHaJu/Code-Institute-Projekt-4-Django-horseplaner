@@ -34,9 +34,11 @@
                 <p class="card-text ">Race: {{ post.race | safe }}</p>
                 <p class="card-text ">birthyear: {{ post.birthyear | safe }}</p>
                 <p class="card-text ">Brand: {{ post.brand | safe }}</p>
+                
+                <div class="d-none d-md-block col-md-6 masthead-image">
+                    <img src="{{ post.blog_image.url }}" class="img-responsive">
+                </div>
                 <p class="card-text ">{{ post.content | safe }}</p>
-
-
                 <div class="row">
 
                     <div class="col-1">
@@ -72,9 +74,7 @@
                             {{ total_comments }}</strong>
                         {% endwith %}
                     </div>
-                    <div class="d-none d-md-block col-md-6 masthead-image">
-                        <img src="{{ post.blog_image.url }}" class="img-responsive">
-                    </div>
+                    
                 </div>
             </div>
         </div>
