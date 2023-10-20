@@ -239,6 +239,31 @@ footer i {
     height: auto;
 }
 
+.content-container {
+    display: flex;
+    align-items: center; 
+    font-size: 1.5rem;
+}
+
+.text-content {
+    flex: 1; 
+    padding: 20px; 
+}
+
+.image-content {
+    flex: 1; 
+}
+
+.fhimage {
+    max-width: 100%; 
+    width: 500px;
+    height: auto;
+    border-radius: 40px;
+}
+
+#map {
+    height: 100%;
+}
 
 @media  screen and (max-width: 450px) {
     .Logo {
