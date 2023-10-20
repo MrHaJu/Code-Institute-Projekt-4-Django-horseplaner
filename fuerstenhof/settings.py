@@ -17,7 +17,7 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
-development = os.environ.get("DEVELOPMENT", False)
+#development = os.environ.get("DEVELOPMENT", False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,15 +28,15 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY", '')
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = development
+DEBUG = True
 
-if development:
-    ALLOWED_HOSTS = ["mrhaju-pp4-horse-planer-9051a41351ce.herokuapp.com","8000-mrhaju-code-institute-pr-goiyaz5p64.us2.codeanyapp.com", "127.0.0.1"]
-else:
-    ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME")]
+#if development:
+#    ALLOWED_HOSTS = ["mrhaju-pp4-horse-planer-9051a41351ce.herokuapp.com","8000-mrhaju-code-institute-pr-goiyaz5p64.us2.codeanyapp.com", "127.0.0.1"]
+#else:
+ALLOWED_HOSTS = ["mrhaju-pp4-horse-planer-9051a41351ce.herokuapp.com","8000-mrhaju-code-institute-pr-goiyaz5p64.us2.codeanyapp.com", "127.0.0.1"]
 
 
 # Application definition
@@ -62,7 +62,7 @@ INSTALLED_APPS = [
 SITE_ID = 1
 
 STATIC_URL = '/static/'
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
@@ -115,7 +115,7 @@ WSGI_APPLICATION = 'fuerstenhof.wsgi.application'
 #            "ENGINE": "django.db.backends.sqlite3",
 #            "NAME": BASE_DIR / "db.sqlite3",
 #        }
- #   }
+#   }
 #else:
 DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
@@ -162,7 +162,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+# MEDIA_URL = "/media/"
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
