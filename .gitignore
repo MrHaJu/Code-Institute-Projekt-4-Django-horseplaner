@@ -8,4 +8,4 @@ node_modules/
 .github/
 cloudinary_python.txt
 venv/
-*.dbsqlite3
+*.sqlite3
