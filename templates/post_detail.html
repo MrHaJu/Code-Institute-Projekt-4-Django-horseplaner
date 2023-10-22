@@ -34,7 +34,7 @@
                 <p class="card-text ">Race: {{ post.race | safe }}</p>
                 <p class="card-text ">birthyear: {{ post.birthyear | safe }}</p>
                 <p class="card-text ">Brand: {{ post.brand | safe }}</p>
-                
+
                 <div class="d-none d-md-block col-md-6 masthead-image">
                     <img src="{{ post.blog_image.url }}" class="img-responsive">
                 </div>
@@ -74,7 +74,7 @@
                             {{ total_comments }}</strong>
                         {% endwith %}
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -101,6 +101,12 @@
                     </p>
                     <!-- The body of the comment goes before the | -->
                     {{ comment.body | linebreaks }}
+                    {% if user.is_authenticated %}
+                    {% if comment.author == user or user.is_superuser %}
+                    <a href="{% url 'edit_comment' comment.id %}">Edit</a>
+                    <a href="{% url 'delete_comment' comment.id %}">Delete</a>
+                    {% endif %}
+                    {% endif %}
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}
@@ -120,6 +126,7 @@
                 <h3>Write Informations:</h3>
                 <p>Posting as: {{ user.username }}</p>
                 <form method="post" style="margin-top: 1.3em;">
+                    
                     {{ comment_form | crispy }}
                     {% csrf_token %}
                     <button type="submit" class="btn btn-signup btn-lg">Submit</button>
