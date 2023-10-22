@@ -235,8 +235,9 @@ footer i {
 }
 
 .card-img-top {
-    width: 300px;
-    height: auto;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
 }
 
 .content-container {
@@ -263,6 +264,12 @@ footer i {
 
 #map {
     height: 100%;
+}
+
+.username {
+    font-size: 0.7rem;
+    margin-top: 13px;
+    color: var(--customtext);
 }
 
 @media  screen and (max-width: 450px) {
