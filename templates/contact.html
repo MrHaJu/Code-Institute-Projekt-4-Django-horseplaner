@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="filler">
+    <h4>Thank you for contacting Us. We love to hear from you</h4>
+</div>
+<div id="contactmain">
+    
+    <!--E-Mail Contact Form-->
+    <form id="contact-form">
+        <!--name input field-->
+        <div class="mb-3">
+            <h1 id="bgtext">Contact Us</h1>
+            <label for="from_name" class="form-label"></label>
+            <input placeholder="Your Name 🖋" type="text" class="form-control" id="from_name"
+                name="from_name" required>
+        </div>
+        <!--email input field-->
+        <div class="mb-3">
+            <label for="reply_to" class="form-label"></label>
+            <input placeholder="Your E-Mail address 📧" type="email" class="form-control" id="reply_to"
+                name="reply_to" required>
+        </div>
+        <!--message text field-->
+        <div class="mb-3">
+            <label for="message" class="form-label"></label>
+            <textarea rows="4" placeholder="Type your Message here ✍" class="form-control" id="message"
+                name="message" required></textarea>
+        </div>
+        <!--submit form button-->
+        <div class="mb-3 d-flex justify-content-center">
+            <button type="submit" class="btn btn-lg btn-outline-secondary">
+                Send 📩
+            </button>
+        </div>
+    </form>
+
+</div>
+
+{% endblock content %}

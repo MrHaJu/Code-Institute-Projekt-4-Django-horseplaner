@@ -179,7 +179,7 @@ body {
 }
 
 .maincontent {
-    margin-top: 100px;
+    margin-top: 50px;
     z-index: 10;
     min-height: 100vh;
     width: 100%;
@@ -303,6 +303,111 @@ footer i {
     margin-top: 13px;
     color: var(--customtext);
 }
+
+
+/*Contact Page*/
+
+#contactmain {
+    margin-top: 5vh;
+}
+
+.contactSection {
+    margin: 10px;
+}
+
+.filler {
+    padding: 2%;
+    text-align: center;
+    
+}
+
+#contact-form {
+    height: 550px;
+    width: 100%;
+    background-color: var(--warm-yellow);
+    position: absolute;
+    transform: translate(-50%, -40%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 8px 35px;
+    margin-top: 20%;
+    margin: 0 auto;
+    max-width: 500px;    
+}
+
+#contact-form * {
+    color: #3c0647;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    font-weight: bold;    
+}
+
+
+#contact-form h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+#contact-form label {
+    display: block;
+}
+
+#contact-form input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#contact-form textarea {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#contact-form::placeholder {
+    color: #e5e5e5;
+}
+
+#contact-form button {
+    margin-top: 5px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #080710;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form input:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#contact-form textarea:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#contact-form button:hover {
+    background-color: rgba(255, 255, 255, 0.8);    
+}
+/*Contact Page end*/
 
 @media  screen and (max-width: 450px) {
     .Logo {

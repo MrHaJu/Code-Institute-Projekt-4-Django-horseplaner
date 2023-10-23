@@ -56,6 +56,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <a id="contact" class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a id="horsenavtop" class="nav-link" href="{% url 'horses' %}">Horses</a>
@@ -104,6 +107,15 @@
             let alert = new bootstrap.Alert(messages);
             alert.close();
         }, 3000);
+    </script>
+    <script src="{% static 'js/contactform.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("Eu7yfNHrzrr-vBj7N");
+        })();
     </script>
 </body>
 
