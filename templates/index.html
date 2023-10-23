@@ -1,23 +1,41 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="content-container">
-    <div class="text-content">
-        <h1>Welcome to Fürstenhof Equestrian</h1>
-        <br>
-        <p>The Fürstenhof is located in the middle of the idyllic landscape of East Frisia. For us, everything revolves around the well-being and training of the horses. It doesn't matter whether it's English dressage or western.</p>
-    </div>
-        <div class="image-content">
-            <img class="fhimage" src="https://res.cloudinary.com/db6t1xmmn/image/upload/v1697818667/media/upload/micc9fy51znuo4ftcmal.jpg" alt="Fürstenhof from the sky">
+<!-- Image and description Fürstenhof -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Welcome to Fürstenhof Equestrian</h1>
+            <p>The Fürstenhof is located in the middle of the idyllic landscape of East Frisia. For us, everything
+                revolves around the well-being and training of the horses. It doesn't matter whether it's English
+                dressage or western.</p>
         </div>
-
-</div>
-<br>
-<div>
-    <p>Here you can find us</p>
-    <div class="map-container">
-        <div id="map">MAP</div>
+        <div class="col-md-6">
+            <img class="img-fluid"
+                src="https://res.cloudinary.com/db6t1xmmn/image/upload/v1697818667/media/upload/micc9fy51znuo4ftcmal.jpg"
+                alt="Fürstenhof from the sky">
+        </div>
     </div>
-    
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Video</h1>
+            <p>Text</p>
+        </div>
+        <div class="col-md-6">
+            <!-- Platz für zusätzliche Inhalte oder Bilder -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Video link change !!! -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/tNSfDqdA3Ag?si=_Ba7No7ddb0aEp0Z" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen style="width: 100%; height: 500px;"></iframe>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock content %}
