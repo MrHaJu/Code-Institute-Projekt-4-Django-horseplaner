@@ -53,14 +53,14 @@
             <!-- Navbar -->
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    <li class="nav-item {% if request.path == '/' %}active{% endif %}">
+                        <a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {% if request.path == '/contact/' %}active{% endif %}">
                         <a id="contact" class="nav-link" href="{% url 'contact' %}">Contact</a>
                     </li>
                     {% if user.is_authenticated %}
-                    <li class="nav-item">
+                    <li class="nav-item {% if request.path == '/horses/' %}active{% endif %}">
                         <a id="horsenavtop" class="nav-link" href="{% url 'horses' %}">Horses</a>
                     </li>
                     <li class="nav-item">
@@ -108,6 +108,7 @@
             alert.close();
         }, 3000);
     </script>
+    {% if 'contact' in request.path %}
     <script src="{% static 'js/contactform.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -117,6 +118,7 @@
             emailjs.init("Eu7yfNHrzrr-vBj7N");
         })();
     </script>
+    {% endif %}
 </body>
 
 </html>
