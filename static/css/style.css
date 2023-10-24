@@ -427,11 +427,21 @@ footer i {
 }
 /*Contact Page end*/
 
+@media  screen and (max-width: 1150px) {
+    .card-img-top {
+        max-width: 80%;
+    }
+}
+
 @media  screen and (max-width: 450px) {
     .Logo {
         display: none;
     }
 
+    .masthead-image{
+        max-width: 80%;
+        object-fit: cover;
+    }
     .brand {
         font-size: 0.8rem;
     }
