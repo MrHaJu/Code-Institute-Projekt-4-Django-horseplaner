@@ -39,6 +39,8 @@
 
             <!-- Alerts -->
             <div class="container">
+                
+                    <i class="fa-regular fa-user username">Welcome <span>{{ user.username }}</span></i>
                 <div class="row">
                     <div class="col-md-16 offset-md-2">
                         {% for message in messages %}
@@ -63,8 +65,7 @@
                     <li class="nav-item {% if request.path == '/horses/' %}active{% endif %}">
                         <a id="horsenavtop" class="nav-link" href="{% url 'horses' %}">Horses</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="{% url 'account_logout' %}"><i class="fa-regular fa-user username"><span>{{ user.username }}</span></i></a>
+                    
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
