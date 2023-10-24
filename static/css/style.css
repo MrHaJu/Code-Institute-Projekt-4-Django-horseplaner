@@ -200,6 +200,7 @@ body {
 .footer {
     align-items: center;
     max-height: 20vh;
+    padding-bottom: 10px;
     position: fixed;
     bottom: 0;
     z-index: 1000;
