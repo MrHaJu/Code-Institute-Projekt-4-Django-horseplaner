@@ -260,13 +260,9 @@ footer i {
     flex: 1; 
 }
 
-.imgcenter {
-    justify-content: center;
-    align-items: center;
-}
 .airimage {
     max-width: 100%; 
-    width: 700px;
+    width: 900px;
     height: auto;
     border-radius: 100px;
 }
