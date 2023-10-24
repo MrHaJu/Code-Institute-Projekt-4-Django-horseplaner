@@ -260,11 +260,28 @@ footer i {
     flex: 1; 
 }
 
+.imgcenter {
+    justify-content: center;
+    align-items: center;
+}
+.airimage {
+    max-width: 100%; 
+    width: 700px;
+    height: auto;
+    border-radius: 100px;
+}
 .fhimage {
     max-width: 100%; 
     width: 500px;
     height: auto;
-    border-radius: 40px;
+    border-radius: 100px;
+}
+.fhvideo {
+    max-width: 100%; 
+    max-width: 100%;
+    width: 600px;
+    height: 300px;
+    border-radius: 100px;
 }
 
 #map {
