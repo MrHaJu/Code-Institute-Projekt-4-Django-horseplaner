@@ -12,7 +12,7 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
                 icon: 'success',
                 title: 'well done,',
                 text: 'thank you for submitting your Message',
-            }) /* if the Message is sendt, it give a message*/
+            }); /* if the Message is sendt, it give a message*/
 
             confetti({
                 particleCount: 400,
@@ -24,7 +24,7 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
         },
 
         function (error) {
-            console.log(error)
+            console.log(error);
             Swal.fire({
                 icon: 'error',
                 title: '404',
@@ -32,4 +32,4 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
             });
         },
     );
-})
+});

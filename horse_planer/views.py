@@ -11,11 +11,13 @@ class HorsesView(generic.ListView):
     template_name = "horses.html"
     paginate_by = 6
 
+
 class Contact(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "contact.html"
-    
+
+
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
@@ -87,10 +89,11 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse("post_detail", args=[slug]))
-    
+
+
 def edit_comment(request, comment_id):
     comment = get_object_or_404(Comment, pk=comment_id)
-    
+
     if request.method == "POST":
         form = CommentForm(request.POST, instance=comment)
         if form.is_valid():
@@ -98,19 +101,19 @@ def edit_comment(request, comment_id):
             return redirect('post_detail', slug=comment.post.slug)
     else:
         form = CommentForm(instance=comment)
-    
+
     return render(request, 'edit_comment.html', {'form': form, 'comment': comment})
 
-# View für das Löschen von Kommentaren
+
+# delete comment view
 def delete_comment(request, comment_id):
     comment = get_object_or_404(Comment, pk=comment_id)
-    # Überprüfen, ob der Benutzer ein Administrator ist oder der Autor des Kommentars
+    # check if user is admin
     if request.user.is_superuser or request.user == comment.author:
         if request.method == 'POST':
-            # Löschlogik hier einfügen
+            # Ldelete logic
             comment.delete()
             return redirect('post_detail', slug=comment.post.slug)
         return render(request, 'delete_comment.html', {'comment': comment})
     else:
-        # Hier können Sie eine Weiterleitung oder eine Fehlermeldung hinzufügen
         return redirect('post_detail', post_id=comment.post.id)
