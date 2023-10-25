@@ -60,17 +60,17 @@ Features and interactivity are kept to a minimum, as to not overwhelm the user w
 
 ### Agile
 
-This project was designed and built using the agile approach. Right from the initial planning through to final development. To help visualise the process I created a [GitHub project](https://github.com/users/MrHaJu/projects/4/views/1) and utilised the provided Kanban board method make sure i implement every neccessary feature.
+This project was designed and built using the agile approach. From the initial planning through to final development. To help visualise the process I created a [GitHub project](https://github.com/MrHaJu/Code-Institute-Projekt-4-Django-horseplaner) and utilised the provided Kanban board method make sure i implement every neccessary feature.
 
-To view all user stories including their required acceptance criterias and tasks, refer the project linked to above.
-Each story also has been tagged with a label to signify how crucial a particular feature is to the overall workings and acceptability of the site.
+To view all user stories including their required acceptance criterias and tasks, refer the project linked below.
+
 
 [View Agile on Github Pages](https://github.com/users/MrHaJu/projects/4/views/1)
 
 
 ### Wireframes
 
-The initial [wireframes in Figma](https://www.figma.com/file/Ajb5EOJLJedDc0v8a0wL67/Woohoo-Haiku) are an overly simplified version of the finished product and merely served the purpose of listing most of the site's essential features.
+The initial [wireframes in Figma](https://www.figma.com/file/JgWIf92LDhSdwyxbOAf9Ar/F%C3%BCrstenhof-Equestrian?type=design&node-id=0%3A1&mode=design&t=2l7GDAVULiM33wx4-1) are an overly simplified version of the finished product and merely served the purpose of listing most of the site's essential features.
 
 Not all features and functions are covered by these first drafts. For a full list of existing features see [Features](#features)
 
