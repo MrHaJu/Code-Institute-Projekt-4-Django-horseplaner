@@ -31,7 +31,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # if development:
 #    ALLOWED_HOSTS = ["mrhaju-pp4-horse-planer-9051a41351ce.herokuapp.com","8000-mrhaju-code-institute-pr-goiyaz5p64.us2.codeanyapp.com", "127.0.0.1"]
