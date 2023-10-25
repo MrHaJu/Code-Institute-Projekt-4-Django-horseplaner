@@ -334,10 +334,10 @@ after registration the user can click on the name in the navbar to get to the us
 
 ### Database Model
 
-The database model diagram was designed using [Lucidchart]().
+The database model diagram was designed using [Canva](https://www.canva.com/).
 The first draft of the entity relationship diagram does not include all models used in the final database.
 
-![ERD]()
+![ERD](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698245039/readme/ilwyhyhu5bxkljqmsvnd.png)
 
 ### Custom Model
 
@@ -348,7 +348,7 @@ I integrated 4 custom models.
 ![Brand](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698233859/readme/c5fmubfr9us7dprdcccj.png)
 ![Blog image](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698233859/readme/wmrwq54xf6fdlamugusx.png)
 
-As required by the assessment criteria for this project, one custom model (the ``race`` ``birthyear`` ``brand`` and ``blog image``models) were added which were not covered by Code Institute's tutorial.
+As required by the assessment criteria for this project, one custom model (the ``race``, ``birthyear``, ``brand`` and ``blog image``models) were added which were not covered by Code Institute's tutorial.
 
 ### CRUD
 
