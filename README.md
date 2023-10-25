@@ -479,7 +479,7 @@ removed comma and added semicolon
 Only files with custom written python code have been verified with the above validator.
 All files yielded the same result. See image of test results for models.py as example output.
 
-![python linter result](https://res.cloudinary.com/kay-ddggxh/image/upload/v1671020398/woohoo_haiku/images/readme/validation_imgs/python-linter-result.png)
+![python linter result](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698245884/readme/testing/asywky0lrbqsdvumx8at.png)
 
 **admin.py**
 
@@ -710,3 +710,23 @@ Icons taken from [Fontawesome](https://fontawesome.com/search)
 **Fonts:**
 
 Font taken from [Google Font](https://fonts.google.com/).
+
+## Credits
+
+### Code Used
+
+* [Othman Adi (Coding with Adi) Java Script for contact form](https://gist.github.com/OthmanAdi)
+* [EmailJS Java Script for sending Emails to my googlemail](https://www.emailjs.com/)
+* [Bootstrap CSS](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+* [Font Awesome](https://fontawesome.com/)
+* [Google Fonts](https://fonts.google.com/)
+* [Example readme file by Kera Cudmore](https://github.com/kera-cudmore)
+
+### Content
+
+Content of the website was written by the owner (Andreas Huppertz)
+
+### Acknowledgments
+
+* [Othman Adi (Coding with Adi) Java Script for contact form](https://gist.github.com/OthmanAdi), for teaching me how to use my first Java Scripts and CSS.
+* [Jubril Akolade](https://github.com/Jubrillionaire), my Code Institute Mentor.
