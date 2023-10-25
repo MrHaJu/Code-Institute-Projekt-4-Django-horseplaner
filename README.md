@@ -381,7 +381,7 @@ An authenticated user can delete their own saved comments.
 
 - [Gunicorn](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/) (Python HTTP server for WSGI applications)
 - [pyscopg2](https://pypi.org/project/psycopg2/) (PostgreSQL Database adapter)
-- [Pillow](https://pypi.org/project/Pillow/)
+- [Pillow](https://pypi.org/project/Pillow/) (Pillow Python Imaging Library (Fork) )
 
 ### Django Libraries
 
