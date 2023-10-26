@@ -440,7 +440,11 @@ No errors or warnings to show.
 
 **Delete comment page**
 
-No errors or warnings to show.
+If click on cancel, error 404 appears
+
+*Fix*
+
+change {% url 'post_detail' comment.post.id %} to {% url 'post_detail' comment.post.slug %}
 
 **Sign Up page**
 
