@@ -397,7 +397,7 @@ An authenticated user can delete their own saved comments.
 
 ### Test Guide
 
-For extensive instructions on how to manually test this site and it's user stories, please refer to these [testing instructions](TESTING.md)
+For extensive instructions on how to manually test this site and it's user stories, please refer to these [testing instructions](testing.md)
 
 ### Validator Testing
 
