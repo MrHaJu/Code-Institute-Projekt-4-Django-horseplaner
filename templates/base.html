@@ -55,6 +55,7 @@
             <!-- Navbar -->
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto">
+                    <button id="goBackButton" class="btn btn-signup btn-sm">Zurück</button>
                     <li class="nav-item {% if request.path == '/' %}active{% endif %}">
                         <a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
@@ -102,6 +103,7 @@
         </p>
     </footer>
     <!-- Scripts -->
+    <script src="{% static 'js/goback.js' %}"></script>
     <script>
         setTimeout(function () {
             let messages = document.getElementById("msg");
@@ -119,6 +121,7 @@
             emailjs.init("Eu7yfNHrzrr-vBj7N");
         })();
     </script>
+    
     {% endif %}
 </body>
 
