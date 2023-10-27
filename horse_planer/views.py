@@ -125,7 +125,6 @@ def filter_posts(request):
     form = PostFilterForm(request.GET)
     if form.is_valid():
         race = form.cleaned_data.get('race')
-        birthyear = form.cleaned_data.get('birthyear')
         brand = form.cleaned_data.get('brand')
 
         if race:
