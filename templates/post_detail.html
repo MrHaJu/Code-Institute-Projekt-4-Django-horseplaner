@@ -16,7 +16,7 @@
             <div class="d-md-block col-md-6 col-sm-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="#" width="100%" alt="default image">
+                <img src="https://res.cloudinary.com/db6t1xmmn/image/upload/v1698405951/atxoks2atc2bgsytws3p.png" width="100%" alt="default image">
                 {% else %}
                 <img src="{{ post.featured_image.url }}" class="img-responsive" alt="post image">
                 {% endif %}
@@ -36,7 +36,11 @@
                 <p class="card-text ">Brand: {{ post.brand | safe }}</p>
 
                 <div class="d-md-block col-md-6 col-sm-6 masthead-image">
+                {% if "placeholder" in post.blog_image.url %}
+                    <img src="https://res.cloudinary.com/db6t1xmmn/image/upload/v1698405951/atxoks2atc2bgsytws3p.png" width="100%" alt="default image">
+                {% else %}
                     <img src="{{ post.blog_image.url }}" class="img-responsive" alt="blog image">
+                {% endif %}
                 </div>
                 <p class="card-text ">{{ post.content | safe }}</p>
                 <div class="row">

@@ -52,7 +52,7 @@
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="default image">
+                                    src="https://res.cloudinary.com/db6t1xmmn/image/upload/v1698405951/atxoks2atc2bgsytws3p.png" alt="default image">
                                 {% else %}
                                 <a href="{% url 'post_detail' post.slug %}" class="post-link"><img class="card-img-top" src=" {{ post.featured_image.url }}" alt="post image"></a>
                                 {% endif %}
