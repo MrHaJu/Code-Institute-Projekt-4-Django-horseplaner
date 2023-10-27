@@ -6,7 +6,44 @@
     <div class="row">
 
         <!-- Blog Entries Column -->
+        <div class="text-center mt-5">
+            <div class="row justify-content-center">
+            <form method="get" action="{% url 'filter_posts' %}">
+                <label for="id_race">Race:</label>
+                <select id="id_race" name="race">
+                    <option value="">All</option>
+                    <option value="Hannoveraner">Hannoveraner</option>
+                    <option value="Oldenburger">Oldenburger</option>
+                    <option value="Westfahle">Westfahle</option>
+                    <option value="Quarter">Quarter</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Paint">Paint</option>
+                    <option value="Pony">Pony</option>
+                    {% for race_option in RACE_CHOICES %}
+                        <option value="{{ race_option.0 }}">{{ race_option.1 }}</option>
+                    {% endfor %}
+                </select>
+            
+                <label for="id_brand">Brand:</label>
+                <select id="id_brand" name="brand">
+                    <option value="">All</option>
+                    <option value="Dressage">Dressage</option>
+                    <option value="Jumping">Jumping</option>
+                    <option value="Cutting">Cutting</option>
+                    <option value="Pleasure">Pleasure</option>
+                    <option value="Trail">Trail</option>
+                    {% for brand_option in BRAND_CHOICES %}
+                        <option value="{{ brand_option.0 }}">{{ brand_option.1 }}</option>
+                    {% endfor %}
+                </select>
+            
+                <input type="submit" class="btn btn-signup btn-sm" value="Filtern">
+            </form>
+            </form>
+        </div>
+        </div>
         <div class="col-12 mt-3 left">
+            
             <div class="row">
                 {% for post in post_list %}
                 <div class="col-md-4">
