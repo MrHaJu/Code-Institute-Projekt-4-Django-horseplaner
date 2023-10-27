@@ -191,16 +191,21 @@ All pictures and videos were created by ourselves. For social media links I used
 
 - Navbar with icon and nav links
 - Different links visible for authenticated and unauthenticated users
-- Active link rendered black instead of default white
+- Active link rendered with green line underneath
 - Collapsible burger menu with drop-down on small to medium screens
+- go back button to bring always one page back
+- logged in user will be displayed in center of navbar if looged in
+- Alerts display also in navbar center
 
-![navbar](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698158633/readme/ecc4pqtc5oobdorxdezg.png)
+![navbar](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698395073/readme/dqpmqzmhdkpl6fwdj4td.png)
 
-![navbar logged in](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698158633/readme/w9bguiw2s2chuaqabsus.png)
+![navbar logged in](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698395073/readme/cwm3cxhv5dznvkkps4lv.png)
 
-![burger menu](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698158633/readme/pqzeeokylgg5nhv2uw7i.png)
+![navbar alert](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698395522/readme/eagu94oktttppq920iw9.png)
 
-![burger menu open](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698158633/readme/fybzxmfglgar0amx3zwx.png)
+![burger menu](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698395073/readme/wl2xgl7hspcf5vljmotw.png)
+
+![burger menu open](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698395073/readme/tvbih62tukg38s6sdw7l.png)
 
 #### Site introduction
 
@@ -251,7 +256,14 @@ All pictures and videos were created by ourselves. For social media links I used
 
 #### Horses Page
 
-![Horse Posts](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698220143/readme/vrvg9nqumfxzr8zjrqpt.png)
+- Horses Page with filter function.
+- Filter by race or brand
+![Horse Posts](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698395073/readme/j8saykh1n9ntgu2qctlq.png)
+
+#### filtered posts page
+
+![Filtered horse Posts](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698395073/readme/wyggfdgalyjquvftrdxs.png)
+
 
 #### Details Page
 
@@ -341,14 +353,15 @@ The first draft of the entity relationship diagram does not include all models u
 
 ### Custom Model
 
-I integrated 4 custom models.
+I integrated 5 custom models.
 
 ![Race](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698233860/readme/z1rpl0zizzoutkhrcotw.png)
 ![Birthyear](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698233860/readme/fnyzxb0lpvft5nputiks.png)
 ![Brand](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698233859/readme/c5fmubfr9us7dprdcccj.png)
 ![Blog image](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698233859/readme/wmrwq54xf6fdlamugusx.png)
+![filter function](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698395764/readme/fzorxyyj6ipwjjyqrh3g.png)
 
-As required by the assessment criteria for this project, one custom model (the ``race``, ``birthyear``, ``brand`` and ``blog image``models) were added which were not covered by Code Institute's tutorial.
+As required by the assessment criteria for this project, one custom model (the ``race``, ``birthyear``, ``brand``, ``blog image`` and ``filter function`` models) were added which were not covered by Code Institute's tutorial.
 
 ### CRUD
 
@@ -413,6 +426,10 @@ No errors or warnings to show.
 
 No errors or warnings to show.
 
+**filtered posts page**
+
+No errors or warnings to show.
+
 **Contact page**
 
 No errors or warnings to show.
@@ -467,6 +484,7 @@ No error found.
 
 #### JavaScript [JSHint](https://jshint.com/) 
 
+- Contact form
 3 missing semicolon
 1 trailing comma
 
@@ -477,6 +495,10 @@ No error found.
 removed comma and added semicolon
 
 ![jshint result](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698239476/readme/testing/k5jmgh70eagxpwocc5ut.png)
+
+- go back button
+
+![jshint result](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698395988/readme/h11sx3fqasp1245pdkqu.png)
 
 #### Python [CI Python Linter](https://pep8ci.herokuapp.com/)
 

@@ -30,6 +30,7 @@ All navigation links, including home icon, can be found in navbar or on small to
 | Feature | Action                             | Expected Result                 |
 | :-----: | :---------------------------------:| :------------------------------:|
 | **Home Link Icon** | While not on homepage, click icon. | User is redirected back to homepage. |
+| **Go back button** | while on any page, click back button. | user is redirected one page back. |
 | **"Contact" Link** | click "Contact". | User is redirected to Contact page. |
 | **"Login" Link** | While not authenticated, click "Login". | User is directed to Login form. |
 | **"Sign Up" Link** | While not authenticated, click "Sign Up". | User is directed to Sign Up form. |
