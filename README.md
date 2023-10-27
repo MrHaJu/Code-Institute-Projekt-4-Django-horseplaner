@@ -72,18 +72,17 @@ To view all user stories including their required acceptance criteria and tasks,
 
 The initial [wireframes in Figma](https://www.figma.com/file/JgWIf92LDhSdwyxbOAf9Ar/F%C3%BCrstenhof-Equestrian?type=design&node-id=0%3A1&mode=design&t=2l7GDAVULiM33wx4-1) are an overly simplified version of the finished product and merely served the purpose of listing most of the site's essential features.
 
-Not all features and functions are covered by these first drafts. For a full list of existing features see [Features](#features)
+Not all features and functions are covered in this early state. For a full list of existing features see [Features](#features)
 
 <details>
     <summary>
         Wireframe images
     </summary>
-    <img src="" alt="-wireframe">
-    <img src="" alt="-wireframe">
-    <img src="" alt="-wireframe">
-    <img src="" alt="-wireframe">
-    <img src="" alt="-wireframe">
-    <img src="" alt="-wireframe">
+    <img src="https://res.cloudinary.com/db6t1xmmn/image/upload/v1698405799/readme/wireframes/qix5ab6r6yha2nzjwbcr.png" alt="-Index">
+    <img src="https://res.cloudinary.com/db6t1xmmn/image/upload/v1698405800/readme/wireframes/huefzlpyrdttzwhp84ww.png" alt="Horses">
+    <img src="https://res.cloudinary.com/db6t1xmmn/image/upload/v1698405799/readme/wireframes/x2bwuiwaoaevthwwiya8.png" alt="Details 1">
+    <img src="https://res.cloudinary.com/db6t1xmmn/image/upload/v1698405799/readme/wireframes/jpercl8kha1xmg9h5ixy.png" alt="Details 2">
+    <img src="https://res.cloudinary.com/db6t1xmmn/image/upload/v1698405799/readme/wireframes/qqjma4txgok4dpsumzns.png" alt="Contact">
 </details>
 
 
