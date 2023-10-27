@@ -3,9 +3,10 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm, PostFilterForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-class HorsesView(generic.ListView):
+class HorsesView(LoginRequiredMixin, generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "horses.html"
@@ -25,7 +26,7 @@ class PostList(generic.ListView):
     paginate_by = 6
 
 
-class PostDetail(View):
+class PostDetail(LoginRequiredMixin, View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -79,7 +80,7 @@ class PostDetail(View):
         )
 
 
-class PostLike(View):
+class PostLike(LoginRequiredMixin, View):
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
 
@@ -98,11 +99,11 @@ def edit_comment(request, comment_id):
         form = CommentForm(request.POST, instance=comment)
         if form.is_valid():
             form.save()
-            return redirect('post_detail', slug=comment.post.slug)
+            return redirect("post_detail", slug=comment.post.slug)
     else:
         form = CommentForm(instance=comment)
 
-    return render(request, 'edit_comment.html', {'form': form, 'comment': comment})
+    return render(request, "edit_comment.html", {"form": form, "comment": comment})
 
 
 # delete comment view
@@ -110,13 +111,14 @@ def delete_comment(request, comment_id):
     comment = get_object_or_404(Comment, pk=comment_id)
     # check if user is admin
     if request.user.is_superuser or request.user == comment.author:
-        if request.method == 'POST':
-            # Ldelete logic
+        if request.method == "POST":
+            # delete logic
             comment.delete()
-            return redirect('post_detail', slug=comment.post.slug)
-        return render(request, 'delete_comment.html', {'comment': comment})
+            return redirect("post_detail", slug=comment.post.slug)
+        return render(request, "delete_comment.html", {"comment": comment})
     else:
-        return redirect('post_detail', post_id=comment.post.id)
+        return redirect("post_detail", post_id=comment.post.id)
+
 
 def filter_posts(request):
     posts = Post.objects.all()  # Alle Beiträge
@@ -124,13 +126,12 @@ def filter_posts(request):
     # Formular verarbeiten, um Filteroptionen zu erhalten
     form = PostFilterForm(request.GET)
     if form.is_valid():
-        race = form.cleaned_data.get('race')
-        brand = form.cleaned_data.get('brand')
+        race = form.cleaned_data.get("race")
+        brand = form.cleaned_data.get("brand")
 
         if race:
             posts = posts.filter(race=race)
         if brand:
             posts = posts.filter(brand=brand)
 
-    return render(request, 'filtered_posts.html', {'posts': posts, 'form': form})
-
+    return render(request, "filtered_posts.html", {"posts": posts, "form": form})
