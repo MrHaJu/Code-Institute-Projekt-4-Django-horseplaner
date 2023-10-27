@@ -33,9 +33,6 @@ GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-# if development:
-#    ALLOWED_HOSTS = ["mrhaju-pp4-horse-planer-9051a41351ce.herokuapp.com","8000-mrhaju-code-institute-pr-goiyaz5p64.us2.codeanyapp.com", "127.0.0.1"]
-# else:
 ALLOWED_HOSTS = ["mrhaju-pp4-horse-planer-9051a41351ce.herokuapp.com",
                  "8000-mrhaju-code-institute-pr-goiyaz5p64.us2.codeanyapp.com", "127.0.0.1"]
 
@@ -110,14 +107,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'fuerstenhof.wsgi.application'
 
 
-# if development:
-#    DATABASES = {
-#        "default": {
-#            "ENGINE": "django.db.backends.sqlite3",
-#            "NAME": BASE_DIR / "db.sqlite3",
-#        }
-#   }
-# else:
 DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 
@@ -161,9 +150,6 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# MEDIA_URL = "/media/"
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
