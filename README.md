@@ -1,7 +1,7 @@
 # Code Institute Project 4 HTML, CSS, JavaScript, Python, Django
 
 # Fürstenhof Equestrian 
-### Fürstenhof Equestrian is a website for managing horses, using Django. Posts can be created by admins to present the individual horses. As a visitor to the site you have access to the landing page, where information about the Fürstenhof and the training can be found. You have the option of sending an email to the Fürstenhof on the contact page. The email form is controlled via EmailJS. The email goes directly to the site owner's private email address. An automatic response will be sent to the user.Much like a regular blog site, a registered user you have the opportunity to access the Horses Page. On this page the horses are presented in post form. You can open the individual posts to access details. In the details you will find 2 images, breed, age, focus and the current feeding plan. The logged in user has the opportunity to give and take back likes as well as create, edit and delete comments.
+### Fürstenhof Equestrian is a website for managing horses, using Django. Posts can be created by admins to present the individual horses. As a visitor to the site, you have access to the landing page, where information about the Fürstenhof and the training can be found. You have the option of sending an email to the Fürstenhof on the contact page. The email form is controlled via EmailJS. The email goes directly to the site owner's private email address. An automatic response will be sent to the user. Much like a regular blog site, a registered user has the opportunity to access the Horses Page. On this page, the horses are presented in post form. You can open the individual posts to access details. In the details, you will find 2 images, breed, age, focus, and the current feeding plan. The logged-in user has the opportunity to give and take back likes as well as create, edit, and delete comments.
 ![View on multiple screens](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698157591/readme/f5hnfiwqk6wwalzhsiun.png)
 
 [The live website can be seen on HEROKU](https://mrhaju-pp4-horse-planer-9051a41351ce.herokuapp.com/post-detail/quarterback/)
@@ -54,15 +54,15 @@
 
 The general layout of the site is based on warm summery colors.
 
-The general layout, navigation and functionality is plain and intiutive.
+The general layout, navigation, and functionality are plain and intuitive.
 
-Features and interactivity are kept to a minimum, as to not overwhelm the user with too many options.   
+Features and interactivity are kept to a minimum, to not overwhelm the user with too many options.   
 
 ### Agile
 
-This project was designed and built using the agile approach. From the initial planning through to final development. To help visualise the process I created a [GitHub project](https://github.com/MrHaJu/Code-Institute-Projekt-4-Django-horseplaner) and utilised the provided Kanban board method make sure i implement every neccessary feature.
+This project was designed and built using the agile approach. From the initial planning through to final development. To help visualize the process I created a [GitHub project](https://github.com/MrHaJu/Code-Institute-Projekt-4-Django-horseplaner) and utilized the provided Kanban board method to make sure I implemented every necessary feature.
 
-To view all user stories including their required acceptance criterias and tasks, refer the project linked below.
+To view all user stories including their required acceptance criteria and tasks, refer to the project linked below.
 
 
 [View Agile on Github Pages](https://github.com/users/MrHaJu/projects/4/views/1)
@@ -89,12 +89,12 @@ Not all features and functions are covered by these first drafts. For a full lis
 
 ### Site Goals
 
-The goal of this website is to provide the user with an overview of the horses, their background and feeding schedule. User actions are deliberately limited.
+The goal of this website is to provide the user with an overview of the horses, their background, and their feeding schedule. User actions are deliberately limited.
 
-For example, only the admin can create a post. Comments can be created, updated and deleted by logged in users and must be approved by the admin.
-Likes can be given and withdrawn by logged in users.
+For example, only the admin can create a post. Comments can be created, updated, and deleted by logged-in users and must be approved by the admin.
+Likes can be given and withdrawn by logged-in users.
 
-In summary, the website is intended to present the information about the horses and to provide information in the form of comments.
+In summary, the website is intended to present information about the horses and to provide information in the form of comments.
 
 ### 5 Planes of UX
 
@@ -102,19 +102,19 @@ In summary, the website is intended to present the information about the horses 
 
 Addresses user needs and product goals.
 This project wasn't about ignoring the needs that the rest of the web is trying to meet - it's not about buying and selling, social media, discussions, and not an excessive visual feed.
-The goal is to give a clear overview and provide the important information.
+The goal is to give a clear overview and provide important information.
 
 #### Scope
 
 Covers which functions and features are within the scope of the project.
 Minimal functionality was the key to this project. This means that most of the included features are a basic requirement. Features such as user registration and login as well as basic CRUD functionality for authenticated users needed to be implemented. For a detailed explanation of all existing features, see [Existing Features](#existing-features).
-The future prospects discussed in [Future Features](#possible-future-features) were deemed unnecessary at this time, although they are still within the possible scope of this project.
+The prospects discussed in [Future Features](#possible-future-features) were deemed unnecessary at this time, although they are still within the possible scope of this project.
 
 #### Structure
 
 Defines how users can navigate the website and use all existing functions.
 The structure of the website is modeled on a simple blog site. Most simple online blog sites follow a similar template to this website.
-The structure allows users to visit the website, view posts, open and view details, comment and like. This is only possible through user authentication, which requires an account to be created.
+The structure allows users to visit the website, view posts, open and view details, comment, and like. This is only possible through user authentication, which requires an account to be created.
 
 #### Skeleton
 
@@ -172,16 +172,16 @@ Overall, this color palette reflects the holistic approach and expertise of Für
 
 ![Primary colour](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698157413/readme/gbzjdo15gamvscd5vhpb.png)
 
-To set a background for the navbar and footer, an background gradient using CSS was build from the two yellow tones.
-The call to action buttons have a light green tone as the default color and a dark green tone when you hover over them
+To set a background for the navbar and footer, a background gradient using CSS was built from the two yellow tones.
+The call-to-action buttons have a light green tone as the default color and a dark green tone when you hover over them
 
 **Fonts:**
 
-As in my previous projects, I used the Google font Josefin sans in font weight 300
+As in my previous projects, I used the Google font Josefin sans in font-weight 300
 
 **Images and Icons:**
 
-All pictures and videos were created by ourselves. For social media links I used Font Awesome icons
+All pictures and videos were created by ourselves. For social media links, I used Font Awesome icons
 
 ## Features
 
@@ -191,11 +191,11 @@ All pictures and videos were created by ourselves. For social media links I used
 
 - Navbar with icon and nav links
 - Different links visible for authenticated and unauthenticated users
-- Active link rendered with green line underneath
+- Active link rendered with a green line underneath
 - Collapsible burger menu with drop-down on small to medium screens
 - go back button to bring always one page back
-- logged in user will be displayed in center of navbar if looged in
-- Alerts display also in navbar center
+- logged user will be displayed in the center of the navbar if log in
+- Alerts display also in the navbar center
 
 ![navbar](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698395073/readme/dqpmqzmhdkpl6fwdj4td.png)
 
@@ -209,8 +209,8 @@ All pictures and videos were created by ourselves. For social media links I used
 
 #### Site introduction
 
-- Introductory paragraph at top of home page
-- Explains to user what site is about
+- Introductory paragraph at the top of the home page
+- Explain to the user what the site is about
 - Links "Sign Up" and "Login" inside paragraph are clickable
 
 ![site intro](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698218886/readme/rwfqhhxrrlcyljkhefvv.png)
@@ -229,28 +229,28 @@ All pictures and videos were created by ourselves. For social media links I used
 ![Contact Form](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698220144/readme/awcbcdesfphjaltlc2hu.png)
 
 #### Register Page
-- Allows user to create account
+- Allows the user to create an account
 - Fields include Username, Email (optional), Password and Password confirmation
 
 ![Signup](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698220143/readme/q2xwa8jgfrhns9rnymdg.png)
 #### Login Page
 
-- Login form asking for username and password of signed up user
+- Login form asking for username and password of signed-up user
 - Includes "Remember me" checkbox option
 
 ![Login](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698220143/readme/rsdslraqt7jvklvg5yd6.png)
 ![]()
 #### Logout Page
 
-- Seperate page prompts user to confirm action to sign out.
+- Separate page prompts the user to confirm action to sign out.
 
 ![Logout](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698220143/readme/stmmmueodz4xsipe2cth.png)
 ![]()
 
 #### Footer
 
-- Footer with social medial icon links
-- Links open in seperate tabs
+- Footer with social media icon links
+- Links open in separate tabs
 
 ![footer](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698233156/readme/ncpskgiwtfn3l6tywwgn.png)
 
@@ -267,14 +267,14 @@ All pictures and videos were created by ourselves. For social media links I used
 
 #### Details Page
 
-on details page you can see a Image of the horse, it's name and when the post was made aswell as who posted
-beneeth you can see the Breed/Race, birthyear of the horse and if it's a Dressage, Jumping, cutting, pleasure or trail horse.
-the Last is a blog image
+on the details page, you can see an Image of the horse, its name, and when the post was made as well as who posted
+beneath you can see the Breed/Race, birth year of the horse, and if it's a Dressage, Jumping, cutting, pleasure, or trail horse.
+The last is a blog image
 
 
 ![Header](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698220101/readme/lcvl44qkjr6nksmacidf.png)
 
-In the admin panel you have a text input field which in my case is used as a food plan
+In the admin panel, you have a text input field which in my case is used as a food plan
 
 ![Content field / Food Plan](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698220137/readme/h3j5hcjqjoouwkdmfsrn.png)
 
@@ -282,15 +282,15 @@ you can like and unlike via clicking on the little heart and see how many info c
 
 ![Likes and comments](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698230392/readme/mcdhqboupfzk95junmkn.png)
 
-As a user you can write a comment. You have to put your email and a comment in the form fields
+As a user, you can write a comment. You have to put your email and comment in the form fields
 
 ![Write comment field](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698220143/readme/h13oirxovcz4rht8dpzl.png)
 
-As a user you update or delete your own comment
+As a user, you update or delete your own comment
 
 ![Comments as User](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698220149/readme/vwcqad7ymgyhubbnljia.png)
 
-As a admin you are able to update and delete every given comment
+As an admin, you are able to update and delete every given comment
 
 ![Comments as Admin](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698220142/readme/dpmjzzrtngtoc9w7cuz6.png)
 
@@ -311,7 +311,7 @@ If you click on delete comment, you will be redirected to the delete comment pag
 
 ![Site administration](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698232656/readme/pjcnxngflm51ul6tuopq.png)
 
-as an admin you are able to create a new post
+as an admin, you are able to create a new post
 
 ![add post](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698232656/readme/xrnvjnph6guw01rgu75t.png)
 
@@ -336,11 +336,13 @@ you can change comments
 
 **post function for user**
 
-add posts as a user
+- add posts as a user
+
+- add a user-specific training plan and video link to a camera in the horse box. So that the User/Horse owner can see only on his horse's detail page the training plan and a live feed of his horse.
 
 **user profile edit**
 
-after registration the user can click on the name in the navbar to get to the user profile page and update the profile
+after registration, the user can click on the name in the navbar to get to the user profile page and update the profile
 
 ## Database Design
 
@@ -361,11 +363,11 @@ I integrated 5 custom models.
 ![Blog image](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698233859/readme/wmrwq54xf6fdlamugusx.png)
 ![filter function](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698395764/readme/fzorxyyj6ipwjjyqrh3g.png)
 
-As required by the assessment criteria for this project, one custom model (the ``race``, ``birthyear``, ``brand``, ``blog image`` and ``filter function`` models) were added which were not covered by Code Institute's tutorial.
+As required by the assessment criteria for this project, one custom model (the ``race``, ``birthyear``, ``brand``, ``blog image`` and ``filter function`` models) was added which was not covered by Code Institute's tutorial.
 
 ### CRUD
 
-The CRUD principle was main part of the design process for this project. For a detailed description of all CRUD features see [Features](#features)
+The CRUD principle was the main part of the design process for this project. For a detailed description of all CRUD features see [Features](#features)
 
 **Create:**
 An authenticated user can create and save a comment.
@@ -399,7 +401,7 @@ An authenticated user can delete their own saved comments.
 ### Django Libraries
 
 - [django-allauth](https://django-allauth.readthedocs.io/en/latest/) (User authentication)
-- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) (Control rendering behaviour of Django forms)
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) (Control rendering behavior of Django forms)
 
 ### Database
 
@@ -410,7 +412,7 @@ An authenticated user can delete their own saved comments.
 
 ### Test Guide
 
-For extensive instructions on how to manually test this site and it's user stories, please refer to these [testing instructions](testing.md)
+For extensive instructions on how to manually test this site and its user stories, please refer to these [testing instructions](testing.md)
 
 ### Validator Testing
 
@@ -446,8 +448,8 @@ No errors or warnings to show.
 *Fix:*
 
 - Remove trailing slash from ``<hr />``.
-- add alt attribute to image
-- add alt attribute to image
+- add an alt attribute to the image
+- add an alt attribute to the image
 
 
 **edit comment page**
@@ -477,8 +479,8 @@ No errors or warnings to show.
 
 #### CSS [Jigsaw](https://jigsaw.w3.org/css-validator/)
 
-No error found.
-14 Warnings about box shadow and gradients
+No error was found.
+14 Warnings about box-shadow and gradients
 
 ![jigsaw result](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698239290/readme/testing/okeewghykxmvsnq4pugt.png)
 
@@ -502,8 +504,8 @@ removed comma and added semicolon
 
 #### Python [CI Python Linter](https://pep8ci.herokuapp.com/)
 
-Only files with custom written python code have been verified with the above validator.
-All files yielded the same result. See image of test results for models.py as example output.
+Only files with custom-written Python code have been verified with the above validator.
+All files yielded the same result. See the image of test results for models.py as an example output.
 
 ![python linter result](https://res.cloudinary.com/db6t1xmmn/image/upload/v1698245884/readme/testing/asywky0lrbqsdvumx8at.png)
 
@@ -564,7 +566,7 @@ All clear, no errors found
 ### Browser Testing
 
 **Layout:** 
-Testing layout and appearance of site for consistency throughout browsers.
+Testing layout and appearance of the site for consistency throughout browsers.
 
 **Functionality:** 
 - Testing complete functionality of the site. This includes:
@@ -578,7 +580,7 @@ Testing layout and appearance of site for consistency throughout browsers.
     - Delete and edit entries
     - Admin user functions
     
-- Ensuring all links, navigation and form submit functions as expected throughout browsers.
+- Ensuring all links, navigation, and form submit functions as expected throughout browsers.
 
 | Browser     | Layout      | Functionality |
 | :---------: | :----------:| :-----------: |
@@ -596,31 +598,31 @@ There are no known bugs
 
 ## Deployment
 
-This project was deployed using [Heroku](https://heroku.com/), [Cloudinary](https://cloudinary.com/) and [ElephantSQL](https://www.elephantsql.com/). For a full list libraries refer to [Technologies Used](#technologies-used).
+This project was deployed using [Heroku](https://heroku.com/), [Cloudinary](https://cloudinary.com/) and [ElephantSQL](https://www.elephantsql.com/). For a full list of libraries refer to [Technologies Used](#technologies-used).
 
 #### Installing libraries
 
-The following steps outline all libraries needed for successful deployment on Heroku. All necessary requirements and settings updates will not be discussed in this section as they are assumed as logical follow-up steps to installments. For full explanation on how to install these libraries, refer to the links provided in [Technologies Used](#technologies-used).
+The following steps outline all libraries needed for successful deployment on Heroku. All neccessary-requirements and settings updates will not be discussed in this section as they are assumed as logical follow-up steps to installments. For a full explanation of how to install these libraries, refer to the links provided in [Technologies Used](#technologies-used).
 
 - Install **Gunicorn** (server used to run Django on Heroku): ``pip3 install django gunicorn``
 - Install **pyscopg2** (connects to PostgreSQL): ``pip 3 install dj_database_url pyscopg2``
-- Install **Cloudinary** (host static files and images): ``pip3 install dj3-cloudinary-storage``
+- Install **Cloudinary** (host static files and images): ``pip3 install dj3-Cloudinary-storage``
 - Install **pillow** (prevent issues with Heroku not rendering custom stylesheet): ``pip3 install pillow``
 
 #### Creating the Heroku App
 
 - Log into Heroku and go to the Dashboard
 - Click **New** and select **Create new app** from the drop-down
-- Name app appropriately and choose relevant region, then click **Create App**
+- Name the app appropriately and choose the relevant region, then click **Create App**
 
-#### Create PostgreSQL database using ElephantSQL
+#### Create a PostgreSQL database using ElephantSQL
 
 This is necessary to create a database that can be accessed by Heroku. The database provided by Django can not be accessed by the deployed Heroku app.
 
 - Log into ElephantSQL and go to Dashboard
 - Click **Create New Instance**
 - Set up a plan by providing a Name (project name) and select a Plan (for this project the free plan "Tiny Turtle" was chosen). Tags are optional.
-- Click **Select Region** and choose appropriate Data center
+- Click **Select Region** and choose appropriate Datacenter
 - Click **Review**, check all details and click **Create Instance**
 - Return to Dashboard on click on the name of the newly created instance
 - Copy the database URL from the details section
@@ -634,16 +636,16 @@ This is necessary to create a database that can be accessed by Heroku. The datab
 
 #### Update Settings
 
-- Add the following code at the top of ``settings.py`` to connect Django project to env.py:
+- Add the following code at the top of ``settings.py`` to connect the Django project to env.py:
     ````
       import os
       import dj_database_url
       if os.path.isfile('env.py'):
           import env
     ````
-- Remove insecure secret key provide by Django in settings.py and refer to variable in env.py instead (``SECRET_KEY = os.environ.get('SECRET_KEY')``)
+- Remove the insecure secret key provided by Django in settings.py and refer to a variable in env.py instead (``SECRET_KEY = os.environ.get('SECRET_KEY')``)
 
-- To connect to new database, replace provided **DATABASE** variable with 
+- To connect to the new database, replace the provided **DATABASE** variable with 
     ````
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
@@ -653,12 +655,12 @@ This is necessary to create a database that can be accessed by Heroku. The datab
 
 #### Connecting Heroku to Database
 
-- In Heroku dashboard, go to **Settings** tab
-- Add new config vars **CLOUDINARY_URL** (value is CLOUDINARY_URL), **DATABASE_URL** (value is database URL), **HEROKU_HOSTNAME** (value is heroku app), **SECRET_KEY** (value is secret key string) and **PORT** (value "8000")
+- In the Heroku dashboard, go to **Settings** tab
+- Add new config vars **CLOUDINARY_URL** (value is CLOUDINARY_URL), **DATABASE_URL** (value is database URL), **HEROKU_HOSTNAME** (value is Heroku app), **SECRET_KEY** (value is secret key string) and **PORT** (value "8000")
 
 #### Connect to Cloudinary
 
-- In Cloudinary dashboard, copy **API Environment variable**
+- In the Cloudinary dashboard, copy **API Environment variable**
 - In ``env.py`` file, add new variable ``os.environ["CLOUDINARY_URL"] = "<copied_variable"`` and remove ``CLOUDINARY_URL=`` from the variable string
 - Add same variable value as new Heroku config var named **CLOUDINARY_URL**
 - In ``settings.py``, in ``INSTALLED_APPS`` list, above ``django.contrib.staticfiles`` add ``cloudinary_storage``, below add ``cloudinary``
@@ -684,9 +686,9 @@ The following options are available to work with this code or run in a local env
 
 Any changes made to a forked repository do not affect the original repository.
 
-- Log into GitHub and click on repository to download ([Code-Institute-Projekt-4-Django-horseplaner
+- Log into GitHub and click on the repository to download ([Code-Institute-Projekt-4-Django-horseplaner
 ](https://github.com/MrHaJu/Code-Institute-Projekt-4-Django-horseplaner))
-- Click the **Fork** buttonin the top right-hand corner
+- Click the **Fork** button in the top right-hand corner
 - Select a different owner if necessary
 - Click **Create Fork**
 - The repo is now in your chosen account and can be cloned or changed
@@ -695,18 +697,18 @@ Any changes made to a forked repository do not affect the original repository.
 
 Changes made to a cloned repository will affect the original one.
 
-- Navigate to the main page of the repostitory (this could be a forked instance)
+- Navigate to the main page of the repository (this could be a forked instance)
 - Click on the **Code** dropdown menu above the list of files
 - Choose a method to copy the URL for the repository: either via **HTTPS**, by using an **SSH key**, or by using **GitHub CLI**
-- In your work environment, open Git Bash and change current directory to target location for cloned repository
+- In your work environment, open Git Bash and change the current directory to the target location for the cloned repository
 - Type ``git clone`` followed by the copied URL and press enter **Enter**
 
 ### Download as ZIP
 
-- Log into GitHub and click on repository to download ([Code-Institute-Projekt-4-Django-horseplaner
+- Log into GitHub and click on the repository to download ([Code-Institute-Projekt-4-Django-horseplaner
 ](https://github.com/MrHaJu/Code-Institute-Projekt-4-Django-horseplaner))
 - Select **Code** and click "Download Zip" file
-- Once download is completed, extract ZIP file and use in your local environment
+- Once the download is completed, extract the ZIP file and use it in your local environment
 
 ## Source Credits
 
@@ -717,21 +719,21 @@ Changes made to a cloned repository will affect the original one.
 The official [Django Documentation](https://docs.djangoproject.com/en/4.1/) was used throughout creating this project.
 The skeleton of this project is based on the [Code Institute](https://codeinstitute.net/) tutorials ["I Think Therefore I Blog"](https://github.com/Code-Institute-Solutions/Django3blog).
 
-For Edit and delete functions i used a youtube tutorial by [Django World](https://www.youtube.com/@DjangoWorld) as a reference
+For Edit and delete functions I used a youtube tutorial by [Django World](https://www.youtube.com/@DjangoWorld) as a reference
 [Adding edit and delete button in blog detail page | Django | Python](https://www.youtube.com/watch?v=wFci3tnRNFw&t=426s&ab_channel=DjangoWorld)
 
 **Main page pagination**
 
-The code to add conditional pagination to the ``index`` template, including page navigation links was taken as Django and Bootstrap boilerplate from [Code Institute source code](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/06_creating_our_first_view/templates/index.html). Styling was customised. 
+The code to add conditional pagination to the ``index`` template, including page navigation links was taken as Django and Bootstrap boilerplate from [Code Institute source code](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/06_creating_our_first_view/templates/index.html). Styling was customized. 
 
 ### Media and Styling
 
 **Images:**
 
-All Images are selfmade
+All Images are self-made
 
 **Icons:**
-Icons taken from [Fontawesome](https://fontawesome.com/search)
+Icons are taken from [Fontawesome](https://fontawesome.com/search)
 
 **Fonts:**
 
@@ -742,7 +744,7 @@ Font taken from [Google Font](https://fonts.google.com/).
 ### Code Used
 
 * [Othman Adi (Coding with Adi) Java Script for contact form](https://gist.github.com/OthmanAdi)
-* [EmailJS Java Script for sending Emails to my googlemail](https://www.emailjs.com/)
+* [EmailJS Java Script for sending Emails to my Googlemail](https://www.emailjs.com/)
 * [Bootstrap CSS](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 * [Font Awesome](https://fontawesome.com/)
 * [Google Fonts](https://fonts.google.com/)
@@ -750,7 +752,7 @@ Font taken from [Google Font](https://fonts.google.com/).
 
 ### Content
 
-Content of the website was written by the owner (Andreas Huppertz)
+The content of the website was written by the owner (Andreas Huppertz)
 
 ### Acknowledgments
 
