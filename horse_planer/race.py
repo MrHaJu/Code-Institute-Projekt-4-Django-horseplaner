@@ -5,4 +5,5 @@ RACE = (
     ("Quarter", "Quarter"),
     ("Indian", "Indian"),
     ("Paint", "Paint"),
+    ("Pony", "Pony"),
 )
