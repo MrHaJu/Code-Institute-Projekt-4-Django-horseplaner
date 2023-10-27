@@ -492,3 +492,9 @@ footer i {
         height: 300px;
     }
 }
+
+@media  screen and (max-height: 755px) {
+    .filler {
+        display: none;
+    }
+}

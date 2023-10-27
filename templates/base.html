@@ -85,7 +85,11 @@
         </div>
     </nav>
 
-
+    {% if 'contact' in request.path %}
+    <div class="filler">
+        <h4>Thank you for contacting Us. We love to hear from you</h4>
+    </div>
+    {% endif %}
     <!-- Maincontent -->
     <main class="col-md-12 col-lg-12  min-vh-100 main-bg maincontent">
         {% block content %}
