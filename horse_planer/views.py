@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
-from .forms import CommentForm
+from .forms import CommentForm, PostFilterForm
 
 
 class HorsesView(generic.ListView):
@@ -117,3 +117,21 @@ def delete_comment(request, comment_id):
         return render(request, 'delete_comment.html', {'comment': comment})
     else:
         return redirect('post_detail', post_id=comment.post.id)
+
+def filter_posts(request):
+    posts = Post.objects.all()  # Alle Beiträge
+
+    # Formular verarbeiten, um Filteroptionen zu erhalten
+    form = PostFilterForm(request.GET)
+    if form.is_valid():
+        race = form.cleaned_data.get('race')
+        birthyear = form.cleaned_data.get('birthyear')
+        brand = form.cleaned_data.get('brand')
+
+        if race:
+            posts = posts.filter(race=race)
+        if brand:
+            posts = posts.filter(brand=brand)
+
+    return render(request, 'filtered_posts.html', {'posts': posts, 'form': form})
+
