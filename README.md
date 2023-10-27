@@ -390,6 +390,8 @@ An authenticated user can delete their own saved comments.
 - [GitPod](https://gitpod.io/) (IDE)
 - [Heroku](https://heroku.com/) (Site hosting)
 - [Cloudinary](https://cloudinary.com/) (Serving static media files)
+- [Grammarly](https://www.grammarly.com/grammar-check) (Checking for spelling errors)
+- [ChatGPT](https://chat.openai.com/) (help understanding and fixing bugs)
 
 ### Python Libraries
 
